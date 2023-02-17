@@ -90,20 +90,17 @@ body{
 .pack2{
     background-image: url("./timeline.png");
 }
+
 .colon{
     width: 4px;
     height: 40px;
 }
-.pack5{
+.ampm{
     background-image: url("./am.png");
     position:relative;
-}
-.am{
     color:white;
-    position:absolute;
-    top:20px;
-    left:10px;
 }
+
 span{
     font-size: 20px;
 }
@@ -125,9 +122,7 @@ span{
     color:#3D087B;
     margin:40px;
 }
-.intro{
-    text-align: left;
-}
+
 .img1{
     width: 42px;
     height: 42px;
@@ -136,15 +131,10 @@ span{
 .sun{
     background-image: url("./sun.png");
 }
-#time{
-    color:#3D087B;
-    width:250px;
-    height:30px;
-    padding:5px;
-}
+
 .pipe1{
     position:absolute;
-    left:65px;
+    left:82px;
     top:82px;  
 }
 .food{
@@ -152,7 +142,7 @@ span{
 }
 .pipe2{
     position:absolute;
-    left:65px;
+    left:82px;
     top:165px;   
 }
 .nap{
@@ -160,11 +150,14 @@ span{
 }
 .pipe3{
     position:absolute;
-    left:65px;
+    left:82px;
     top:250px;  
 }
 .night{
     background-image: url("./nap.png");
+}
+select{
+    width:150px;
 }
 .gd_mng{
     position:absolute;
@@ -194,24 +187,17 @@ span{
     left: 124px;
     width: 310px;
     height: 50px;
+    border:1px solid transparent;
     background-image: linear-gradient(to right, #F1A7C5, #FC5EFF, #CB52F8, #6E54EC);
     border-radius: 5px;
-}
-.alarm_cont{
-    position: absolute;
-    top: 635px;
-    left: 230px;
-    width: 111px;
-    height: 31px;
     color:#FFFFFF;
-    font-size: 24px;
 }
 .schedule{
     position: absolute;
     top: 625px;
     left: 449px;
     width: 240px;
-    height: 94px;
+    height: 104px;
     background: #EDEDED;
     border: 1px solid #3D087BDE;    border-radius: 10px;
     opacity: 0.23;
@@ -259,14 +245,14 @@ span{
     font-size: 25px;
     font-weight: bold;
 } 
+#img2{
+   
+    width: 536px;
+    height: 341px;
+    border-radius: 10px;
+}
 .img2{
     position:absolute;
     top: 345px;
     left: 707px;
-   width: 536px;
-    height: 341px;
-    background-image: url("./curtain.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
 }
