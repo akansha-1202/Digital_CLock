@@ -111,6 +111,9 @@ span {
   color: #3d087b;
   margin: 40px;
 }
+label {
+  width: 30%;
+}
 
 .img1 {
   width: 42px;
@@ -188,6 +191,7 @@ select {
   border-radius: 5px;
   color: #ffffff;
 }
+
 .schedule {
   position: absolute;
   top: 625px;
@@ -219,13 +223,16 @@ select {
   background: #ffffff;
   border: 1px solid #ededed;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .breakfast {
-  position: absolute;
-  top: 45px;
-  left: 30px;
-  width: 492px;
-  height: 38px;
+  /* position: absolute; */
+  /* top: 45px; */
+  /* left: 30px; */
+  /* width: 492px; */
+  /* height: 38px; */
   color: #8e53f0;
   font-size: 25px;
   font-weight: bold;
@@ -241,6 +248,7 @@ select {
   top: 355px;
   left: 707px;
 }
+
 @media screen and (min-width: 701px) and (max-width: 1100px) {
   .container {
     height: 1400px;
@@ -276,11 +284,11 @@ select {
     height: 120px;
   }
   .breakfast {
-    position: absolute;
-    top: 42px;
-    left: 30px;
-    width: 492px;
-    height: 38px;
+    /* position: absolute; */
+    /* top: 42px; */
+    /* left: 35px; */
+    /* width: 90%; */
+    /* height: 38px; */
     color: #8e53f0;
     font-size: 22px;
     font-weight: bold;
@@ -292,23 +300,32 @@ select {
     left: 122px;
     width: 536px;
     height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .content {
     position: absolute;
     top: 440px;
     left: 122px;
     width: 536px;
-    height: 363px;
+    height: 370px;
+    /* margin: 10px; */
+    align-items: center;
   }
   select {
-    width: 20%;
+    width: 25%;
   }
   option {
-    width: 20%;
+    width: 15%;
     font-size: 10px;
     padding: 0px;
     margin: 0px;
   }
+  label {
+    width: 35%;
+  }
+
   #img2 {
     width: 536px;
     height: 400px;
@@ -356,7 +373,7 @@ select {
     width: 200px;
     height: 94px;
   }
-  .timing{
+  .timing {
     font-size: 14px;
   }
 }
@@ -369,32 +386,30 @@ select {
     margin: 0px;
   }
   .clock {
-    /* width: 40%;
-    height: 60px;
-    position: absolute; */
+    /* width: 50%;  */
     top: 34px;
     left: 60px;
     object-fit: contain;
   }
   .box1 {
-    width: 55%;
+    width: 72%;
     height: 125px;
     position: absolute;
-    top: 150px;
-    left: 90px;
+    top: 145px;
+    left: 50px;
   }
   .box2 {
-    width: 63%;
+    width: 80%;
     height: 130px;
     position: absolute;
-    top: 130px;
-    left: 76px;
+    top: 125px;
+    left: 35px;
   }
   .box3 {
     position: absolute;
     top: 120px;
-    left: 60px;
-    width: 70%;
+    left: 20px;
+    width: 88%;
     height: 120px;
   }
 
@@ -410,10 +425,22 @@ select {
   }
   .pack {
     width: 16%;
-    height: 70px;
+    height: 60px;
     color: #8a11bf;
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #hrs,
+  #mins,
+  #secs,
+  #ampm {
+    font-size: 1.4rem;
+  }
+  span {
+    font-size: 0.8rem;
   }
   .pack1 {
     width: 17%;
@@ -445,28 +472,32 @@ select {
 
   .breakfast_box {
     position: absolute;
-    top: 300px;
-    left: 60px;
-    width: 70%;
+    top: 285px;
+    left: 20px;
+    width: 88%;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .breakfast {
     font-size: 12px;
-    top: 30px;
-    left: 60px;
-    width: 65%;
+    /* top: 30px; */
+    /* left: 25px; */
+    /* width: 100%; */
   }
   .content {
     position: absolute;
-    top: 410px;
-    left: 60px;
-    width: 70%;
+    top: 385px;
+    left: 20px;
+    width: 88%;
     height: 270px;
     font-size: 14px;
   }
   .line {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
     margin: 30px;
     color: #3d087b;
   }
@@ -476,7 +507,7 @@ select {
     height: 30px;
     background-repeat: no-repeat;
   }
-
+  /* 
   .pipe1 {
     position: absolute;
     left: 30px;
@@ -492,10 +523,14 @@ select {
     position: absolute;
     left: 82px;
     top: 250px;
+  } */
+
+  label {
+    width: 60%;
   }
 
   select {
-    width: 35%;
+    width: 48%;
   }
   option {
     width: 20%;
@@ -505,25 +540,25 @@ select {
   }
   .img2 {
     position: absolute;
-    top: 655px;
-    left: 60px;
+    top: 645px;
+    left: 20px;
   }
   #img2 {
-    width: 70%;
+    width: 88%;
     height: 280px;
     border-radius: 10px;
   }
 
   .gd_mng {
     position: absolute;
-    top: 910px;
-    left: 60px;
-    width: 70%;
-    height: 77px;
+    top: 915px;
+    left: 20px;
+    width: 88%;
+    height: 60px;
   }
   .text {
     position: absolute;
-    top: 930px;
+    top: 935px;
     left: 70px;
     width: 65%;
     height: 34px;
@@ -531,23 +566,23 @@ select {
   }
   .alarm {
     position: absolute;
-    top: 1020px;
-    left: 60px;
+    top: 1000px;
+    left: 20px;
     width: 30%;
     height: 50px;
   }
   .schedule {
     position: absolute;
-    top: 1020px;
-    left: 190px;
-    width: 35%;
+    top: 1000px;
+    left: 188px;
+    width: 42%;
     height: 104px;
   }
   .schedule_cont {
     position: absolute;
-    top: 1025px;
-    left: 200px;
-    width: 35%;
+    top: 1010px;
+    left: 210px;
+    width: 38%;
     height: 94px;
     font-size: 10px;
   }
