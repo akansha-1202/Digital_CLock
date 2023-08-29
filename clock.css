@@ -6,17 +6,17 @@ body {
   width: auto;
   height: 800px;
   position: relative;
-  margin-left: -5%;
+  /* margin-left: -5%; */
 }
 .clock {
-  width: 210px;
+  width: 220px;
   height: 80px;
   background-image: url("./clock.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   top: 34px;
-  left: 124px;
+  left: 30px;
 }
 
 .box1 {
@@ -97,8 +97,8 @@ span {
 .content {
   position: absolute;
   top: 149px;
-  left: 124px;
-  width: 566px;
+  left: 30px;
+  width: 580px;
   height: 363px;
   border: 1px solid white;
   border-radius: 10px;
@@ -154,8 +154,8 @@ select {
 .gd_mng {
   position: absolute;
   top: 527px;
-  left: 124px;
-  width: 566px;
+  left: 30px;
+  width: 578px;
   height: 77px;
   background: #ededed;
   border: 1px solid #3d087bde;
@@ -164,8 +164,8 @@ select {
 }
 .text {
   position: absolute;
-  top: 542px;
-  left: 199px;
+  top: 550px;
+  left: 50px;
   width: 400px;
   height: 34px;
   color: white;
@@ -177,7 +177,7 @@ select {
 .alarm {
   position: absolute;
   top: 624px;
-  left: 124px;
+  left: 30px;
   width: 310px;
   height: 50px;
   border: 1px solid transparent;
@@ -194,8 +194,8 @@ select {
 
 .schedule {
   position: absolute;
-  top: 625px;
-  left: 449px;
+  top: 623px;
+  left: 365px;
   width: 240px;
   height: 104px;
   background: #ededed;
@@ -207,7 +207,7 @@ select {
 .schedule_cont {
   position: absolute;
   top: 632px;
-  left: 470px;
+  left: 400px;
   width: 200px;
   height: 94px;
   color: #f25cfe;
