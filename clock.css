@@ -1,10 +1,15 @@
 body {
   margin: 0px;
 }
-.container {
+.parent{
   background: #3d087b;
-  width: auto;
-  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 130vh;
   position: relative;
   /* margin-left: -5%; */
 }
