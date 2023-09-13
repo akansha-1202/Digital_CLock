@@ -1,0 +1,304 @@
+body {
+  background-color: black;
+  padding: 80px;
+}
+div,
+ul {
+  box-sizing: border-box;
+}
+#content {
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+}
+
+.task{
+    font-weight:bold; 
+    color:dodgerblue;
+}
+
+.addItem {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.fa-solid {
+  color: dodgerblue;
+}
+
+.add {
+  margin-top: -4px;
+}
+
+.text {
+  font-size: 25px;
+}
+
+#lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 10px;
+  gap: 20px 10px;
+}
+
+#listForm {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  color: red;
+  word-wrap: break-word;
+}
+.addNewList {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#listName {
+  height: 40px;
+  width: 300px;
+  margin: 15px 50px;
+  text-align: center;
+}
+button {
+  height: 35px;
+  width: 80px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+#createNewCard {
+  margin-left: 100px;
+}
+#close {
+  margin-left: 40px;
+}
+
+#itemForm {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addNewItem {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#itemName {
+  height: 40px;
+  width: 300px;
+  margin: 15px 50px;
+  text-align: center;
+}
+#createNewItem {
+  margin-left: 100px;
+}
+
+.cardList {
+  width: 250px;
+  height: 330px;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+.cardTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.cardItemList {
+  list-style-type: none;
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  height: 150px;
+  width: 210px;
+}
+
+.cardItemList::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in WebKit-based browsers */
+}
+
+.cardAddIcon {
+  position: absolute;
+  top: 290px;
+  left: 190px;
+}
+
+.cardDelIcon {
+  margin-left: 10px;
+  position: absolute;
+  top: 290px;
+  left: 150px;
+}
+
+.markAsDone {
+  font-size: 10px;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  height: 20px;
+  margin-bottom: 4px;
+}
+.li {
+  text-decoration: line-through red;
+  opacity: 0.6;
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 35px;
+  }
+  header {
+    font-size: 1.2rem;
+    gap: 5px;
+  }
+  .text {
+    font-size: 1rem;
+    position: absolute;
+    top: 200px;
+  }
+
+  #lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    /* margin: 10px; */
+    gap: 20px 10px;
+  }
+  
+
+  #listForm {
+    width: 90%;
+    height: 160px;
+  }
+  .addNewList {
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  #listName {
+    height: 30px;
+    width: 250px;
+    margin: 10px 50px;
+  }
+  button {
+    height: 30px;
+    width: 70px;
+
+    font-size: 15px;
+  }
+
+  #itemForm {
+    width: 90%;
+    height: 160px;
+  }
+  .addNewItem {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  #itemName {
+    height: 30px;
+    width: 250px;
+    margin: 10px 50px;
+  }
+
+  .cardList {
+    width: 250px;
+    height: 330px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    position: relative;
+    text-align: center;
+  }
+
+  .cardTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .cardItemList {
+    list-style-type: none;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    height: 150px;
+  }
+
+  .cardItemList::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in WebKit-based browsers */
+  }
+
+  .cardAddIcon {
+    position: absolute;
+    top: 290px;
+    left: 150px;
+  }
+
+  .cardDelIcon {
+    margin-left: 10px;
+    position: absolute;
+    top: 290px;
+    left: 110px;
+  }
+
+  .markAsDone {
+    font-size: 6px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    height: 20px;
+    padding: 2px;
+    width: 50px;
+    margin-bottom: 4px;
+  }
+  .li {
+    text-decoration: line-through red;
+    opacity: 0.6;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+}
